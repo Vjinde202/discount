@@ -1,0 +1,18 @@
+
+
+
+
+<input value="15off" #dis15 (change)="getDiscount(dis15.value)" type="radio" name="choose"><button style=" background-color:burlywood;  width: 100px; height: 100px;"> Discount Coupon <br>flat 15% off</button>
+<input value="8off" #dis8 (change)="getDiscount(dis8.value)" type="radio" name="choose"><button style="background-color:burlywood;  width: 100px; height: 100px;">Mega Sale Offer <br>flat 8% off</button>
+<input value="20off1000" #dis20 (change)="getDiscount(dis20.value)" type="radio" name="choose"><button style="background-color:burlywood;  width: 100px; height: 100px;">Welcome Back offer<br>20% off<br>upto:1000 Rs</button><h2>Product Information</h2>
+
+ 
+
+    <div class="userInfo">
+       Product Name: {{products[0].productName}} ,<br>
+       Product Amount: {{products[0].ammount}},<br> 
+       Units: {{products[0].units}}<br>
+    </div>
+    <br>
+    <br>
+    <input type="button" value="proceed to pay" (click)="doCalculate()">
